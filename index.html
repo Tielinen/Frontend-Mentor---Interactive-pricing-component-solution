@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts/Manrope-VariableFont_wght.ttf">
+  <script src="pricing.js" defer></script> 
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="heading-container">
+    <div class="heading-container__content">
+      <h1 class="heading-container__pricing_title">Simple, traffic-based pricing</h1>
+      <p class="heading-container__pricing_description">Sign-up for our 30-day trial.<span class="mobile-break"><br></span> No credit card required.</p>
+    </div>
+  </div>
+
+  <main class="content-container">
+
+    <div class="content-container__pageviews-container">
+      <h2 class="content-container__pageviews-heading"><span class="content-container__pageviews js"></span> Pageviews</h2>
+      <input class="content-container__range js slider" type="range" min="1" max="5" name="price-range">
+      <p class="content-container__price-line"><span class="content-container__price js"></span> / month</p>
+    </div>
+      
+    <p class="content-container__billing">Monthly Billing <input class="content-container__yearly_billing js" type="checkbox" > Yearly Billing <span class="content-container__prosent">-25%</span></p>
+  
+    <div class="bottom-container">
+      <ul class="bottom-container__features-list">
+        <li class="bottom-container__feature">Unlimited websites</li>
+        <li class="bottom-container__feature">100% data ownership</li>
+        <li class="bottom-container__feature">Email reports</li>
+      </ul>
+      
+      <button class="bottom-container__button">Start my trial</button>
+    </div>
+  
+  </main>
+</body>
+</html>
